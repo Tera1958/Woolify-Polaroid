@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button id="click">Click</button>
+<button id="upload">Upload Click</button>
+<button id="shutter">Shutter</button>
+<button id="print">Print</button>
+<button id="ding">Ding</button>
+
+<script type="module">
+import { soundService } from './SoundService.js'; // 改成你的文件路径
+
+document.getElementById('click').onclick = () => soundService.playClick();
+document.getElementById('upload').onclick = () => soundService.playUploadClick();
+document.getElementById('shutter').onclick = () => soundService.playShutter();
+document.getElementById('print').onclick = () => soundService.playPrint();
+document.getElementById('ding').onclick = () => soundService.playDing();
+</script>
+</body>
+</html>
